@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Left</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Matthew Hanlon">
+	<!-- Date: 2015-10-19 -->
+<script type="text/javascript" charset="utf-8">
+	localStorage = window.localStorage;
+		
+	
+	function showGivenName()
+	{
+		alert(localStorage.getItem("given_name"));
+	}
+	
+	function showSurname()
+	{
+		alert(localStorage.getItem("surname"));
+	}
+
+	function showBook()
+	{
+		alert(localStorage.getItem("book"));
+	}
+	
+	function setGivenName()
+	{
+		localStorage.setItem("given_name", "Jonathan");
+	}
+
+  window.addEventListener("storage", handle_storage_update, false);
+
+function handle_storage_update(e)
+{
+	if (!e) 
+	{
+		e = window.event;
+	}
+	alert("Received a storage update, changing the value for " + e.key + " to " + e.newValue + ". The old value (if any) was " + e.oldValue + ".\nChange came from: " + e.url);
+}
+
+</script>
+<style>
+body
+{
+	font-size: 24pt;
+}
+a
+{
+	font-size: 24pt;
+}
+
+div.main
+{
+	border: 1px; thin solid;
+}
+</style>
+
+</head>
+<body>
+<div class="main">
+<h1>Left</h1>
+<a href="" onclick="javascript:setGivenName();">Set given name to local storage</a>
+
+<br/><br/>
+
+<a href="#" onclick="javascript:showGivenName();">Show given name in local storage</a>
+
+<br/><br/>
+
+<a href="#" onclick="javascript:showSurname();">Show surname in local storage</a>
+
+<br/><br/>
+
+<a href="#" onclick="javascript:showBook();">Show book in local storage</a>
+</div>
+</body>
+</html>

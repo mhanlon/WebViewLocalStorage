@@ -13,6 +13,9 @@
 		8535892D1BD55D7900C20B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8535892B1BD55D7900C20B6F /* Main.storyboard */; };
 		8535892F1BD55D7900C20B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8535892E1BD55D7900C20B6F /* Assets.xcassets */; };
 		853589321BD55D7900C20B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853589301BD55D7900C20B6F /* LaunchScreen.storyboard */; };
+		8535893B1BD55DBE00C20B6F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8535893A1BD55DBE00C20B6F /* WebKit.framework */; };
+		8535893E1BD562A100C20B6F /* left.html in Resources */ = {isa = PBXBuildFile; fileRef = 8535893C1BD562A100C20B6F /* left.html */; };
+		8535893F1BD562A100C20B6F /* right.html in Resources */ = {isa = PBXBuildFile; fileRef = 8535893D1BD562A100C20B6F /* right.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		8535892E1BD55D7900C20B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		853589311BD55D7900C20B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		853589331BD55D7900C20B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8535893A1BD55DBE00C20B6F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8535893C1BD562A100C20B6F /* left.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = left.html; path = html/left.html; sourceTree = "<group>"; };
+		8535893D1BD562A100C20B6F /* right.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = right.html; path = html/right.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8535893B1BD55DBE00C20B6F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +74,7 @@
 				853589301BD55D7900C20B6F /* LaunchScreen.storyboard */,
 				853589331BD55D7900C20B6F /* Info.plist */,
 				853589221BD55D7900C20B6F /* Supporting Files */,
+				853589391BD55DA100C20B6F /* Frameworks */,
 			);
 			path = WebViewLocalStorage;
 			sourceTree = "<group>";
@@ -74,9 +82,19 @@
 		853589221BD55D7900C20B6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8535893C1BD562A100C20B6F /* left.html */,
+				8535893D1BD562A100C20B6F /* right.html */,
 				853589231BD55D7900C20B6F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		853589391BD55DA100C20B6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8535893A1BD55DBE00C20B6F /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +157,8 @@
 				853589321BD55D7900C20B6F /* LaunchScreen.storyboard in Resources */,
 				8535892F1BD55D7900C20B6F /* Assets.xcassets in Resources */,
 				8535892D1BD55D7900C20B6F /* Main.storyboard in Resources */,
+				8535893E1BD562A100C20B6F /* left.html in Resources */,
+				8535893F1BD562A100C20B6F /* right.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

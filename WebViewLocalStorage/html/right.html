@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Right</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Matthew Hanlon">
+	<!-- Date: 2015-10-19 -->
+<script type="text/javascript" charset="utf-8">
+	localStorage = window.localStorage;
+	
+	localStorage.setItem("surname", "Swift");
+
+	localStorage.setItem("book", "Gulliver's Travels");
+	
+	
+	function showGivenName()
+	{
+		alert(localStorage.getItem("given_name"));
+	}
+	
+	function showSurname()
+	{
+		alert(localStorage.getItem("surname"));
+	}
+	
+	function setGivenName()
+	{
+		localStorage.setItem("given_name", "Jonathan");
+	}
+	function lazyAddModestProposal()
+	{
+		localStorage.setItem("book2", "A Modest Proposal");
+	}
+</script>
+
+<style>
+body
+{
+	font-size: 24pt;
+}
+a
+{
+	font-size: 24pt;
+}
+div.main
+{
+	border: 1px; thin solid;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="main">
+		<h1>Right</h1>
+
+<a href="#" onclick="javascript:lazyAddModestProposal()">Add an item to the local storage for books</a>
+<br/><br/>
+This panel only adds stuff to local storage,<br/>
+which can then be mined from the left.html</div>
+</body>
+</html>
