@@ -43,6 +43,17 @@ function handle_storage_update(e)
 	alert("Received a storage update, changing the value for " + e.key + " to " + e.newValue + ". The old value (if any) was " + e.oldValue + ".\nChange came from: " + e.url);
 }
 
+function saveCookie(cookie)
+{
+	alert(cookie);
+	document.cookie = cookie;
+}
+
+function showCookies()
+{
+	alert(document.cookie);
+}
+
 </script>
 <style>
 body
@@ -77,6 +88,14 @@ div.main
 <br/><br/>
 
 <a href="#" onclick="javascript:showBook();">Show book in local storage</a>
+
+<h3>Cookies</h3>
+<a href="#" onclick="javascript:saveCookie('username=JimDoe; expires=Thu, 18 Jun 2020 12:00:00 UTC');">Save username cookie</a>
+
+<br/><br>
+
+<a href="#" onclick="javascript:showCookies();">Show cookies</a>
+
 </div>
 </body>
 </html>

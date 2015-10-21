@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSHTTPCookieStorage* cookieStorage = [NSHTTPCookieStorage sharedCookieStorageForGroupContainerIdentifier:@"group.webviewlocalstorage"];
+    [cookieStorage setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
     return YES;
 }
 

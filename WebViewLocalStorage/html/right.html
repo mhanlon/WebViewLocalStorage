@@ -34,6 +34,11 @@
 	{
 		localStorage.setItem("book2", "A Modest Proposal");
 	}
+	
+	function showCookies()
+	{
+		alert(document.cookie);
+	}
 </script>
 
 <style>
@@ -56,10 +61,12 @@ div.main
 
 	<div class="main">
 		<h1>Right</h1>
-
 <a href="#" onclick="javascript:lazyAddModestProposal()">Add an item to the local storage for books</a>
 <br/><br/>
 This panel only adds stuff to local storage,<br/>
-which can then be mined from the left.html</div>
+which can then be mined from the left.html
+<br/><br/>
+<a href="#" onclick="javascript:showCookies();">Show cookies</a>
+</div>
 </body>
 </html>
